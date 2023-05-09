@@ -1,0 +1,40 @@
+{
+  "name": "superbalist/laravel-prometheus-exporter",
+  "description": "A prometheus exporter for Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Superbalist.com a division of Takealot Online (Pty) Ltd",
+      "email": "info@superbalist.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2|^8.1",
+    "illuminate/support": "^5.3 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+    "illuminate/routing": "^5.3 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+    "promphp/prometheus_client_php": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Superbalist\\LaravelPrometheusExporter\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Superbalist\\LaravelPrometheusExporter\\PrometheusServiceProvider"
+      ],
+      "aliases": {
+        "Prometheus": "Superbalist\\LaravelPrometheusExporter\\PrometheusFacade"
+      }
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "mockery/mockery": "^1.0"
+  }
+}
