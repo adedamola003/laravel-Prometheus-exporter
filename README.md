@@ -14,7 +14,7 @@ This package is a wrapper bridging [promphp/prometheus_client_php](https://githu
 ## Installation
 
 ```bash
-composer require superbalist/laravel-prometheus-exporter
+composer require adedamola003/laravel-prometheus-exporter
 ```
 
 Register the service provider in app.php

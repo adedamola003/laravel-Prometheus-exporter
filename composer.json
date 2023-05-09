@@ -1,5 +1,5 @@
 {
-  "name": "adededamola003/laravel-prometheus-exporter",
+  "name": "adedamola003/laravel-prometheus-exporter",
   "description": "A prometheus exporter for Laravel",
   "license": "MIT",
   "authors": [
